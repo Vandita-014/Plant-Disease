@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="posstyle">
+                <span>Already have an account?<span class="loginbtn" onClick={usersigninhandler}>Login</span></span>
+         </div>
+            <div class="row align-items-center">
+                <div class="col img_container">
+                    <div class="imgbox">
+                        <div>
+                            <img src="https://img.freepik.com/free-vector/green-leaves-logo_78370-2096.jpg?w=1380&t=st=1695488195~exp=1695488795~hmac=18288d285197931110e5601c86588b8569d214ec32a7f1e0c22448ebf90777f2" alt="logo" class="logo" width="100" height="100"></img>
+                            <span class="heading">LET'S CODE YOUR FUTURE</span>
+                        </div>
+                        <img src="https://www.apsnet.org/edcenter/disandpath/oomycete/pdlessons/Article%20Images/LateBlight03.jpg" height="318" width="400" alt="signup.png" style="
+                        box-shadow: 0px 0px 12px green;
+                        left: 50%;
+                        position: absolute;
+                        transform: translateX(-50%);
+                        "></img>
+                    </div>
+                </div>
+                <div class="col form_container">
+                    <div class="headingpos">
+                        <span class="headingform">Get Started absolutely free.</span>
+                        <div class="parastyle">Free forever. No credit card needed.</div>
+                    </div>
+                    <form method="POST">
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="firstname">First Name</label>
+                                <input type="text" class="form-control p-3" id="firstname" value={firstname} onChange={userfname} placeholder="First name" autoComplete="off" />
+                            </div>
+                            <div class="col">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" class="form-control p-3" id="lastname" value={lastname} onChange={userlname} placeholder="Last name" autoComplete="off" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control p-2" id="exampleInputEmail1" value={email} aria-describedby="emailHelp" onChange={useremail} placeholder="Enter email" autoComplete="off"/>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control p-2" id="exampleInputPassword1" value={password} onChange={userpassword} placeholder="Password" />
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control p-2" id="exampleInputPassword1" value={cpassword} onChange={usercpassword} placeholder="Password" />
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-lg btn-block my-2" onClick={sumbituserdetail}>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<div>
+    
